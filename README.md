@@ -1,2 +1,2 @@
-[My Digital Portfolio!](https//Mrisuk.github.io)
+[My Digital Portfolio!](https://mrisuk.github.io)
 
