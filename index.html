@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,42 +9,66 @@
 <body>
 <header>
     <div class="container">
-        <h1>Hi, I'm [Your Name]</h1>
-        <p>Welcome to my portfolio! I’m a computer science student passionate about coding and technology.</p>
+        <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
+        <p>Aspiring Computer Scientist & Creative Problem Solver</p>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </div>
 </header>
 
 <section id="about" class="container">
     <h2>About Me</h2>
-    <p>I'm currently pursuing a degree in Computer Science and have experience in Python, Java, and web development. I love solving complex problems and creating efficient, user-friendly solutions.</p>
+    <div class="about-content">
+        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+        <p>
+            I'm currently pursuing a degree in Computer Science, with expertise in programming languages like Python, Java, and web development. I enjoy tackling challenging problems and creating innovative solutions to improve user experiences.
+        </p>
+    </div>
 </section>
 
 <section id="projects" class="container">
     <h2>Projects</h2>
-    <div class="project">
-        <h3>Project 1: [Title]</h3>
-        <p>[Short description of the project.]</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-        <h3>Project 2: [Title]</h3>
-        <p>[Short description of the project.]</p>
-        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Project 1: [Title]</h3>
+            <p>[Short description of the project and its impact.]</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: [Title]</h3>
+            <p>[Short description of the project and its impact.]</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3: [Title]</h3>
+            <p>[Short description of the project and its impact.]</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+        </div>
     </div>
 </section>
 
 <section id="contact" class="container">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+    <p>
+        Want to work together or learn more about me? Reach out via email at
+        <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.
+    </p>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </section>
 
 <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2025 [Your Name]. Built with 💻 and ☕.</p>
 </footer>
 </body>
 </html>
