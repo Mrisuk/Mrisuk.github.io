@@ -1,4 +1,6 @@
-/* CSS Variables for UI Consistency */
+/* ============================================================
+   Variables
+   ============================================================ */
 :root {
   --primary-color: #007bff;
   --secondary-color: #333;
@@ -8,7 +10,9 @@
   --font-secondary: 'Poppins', sans-serif;
 }
 
-/* General Reset */
+/* ============================================================
+   General Reset and Body Styling
+   ============================================================ */
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +25,22 @@ body {
   color: var(--secondary-color);
   line-height: 1.6;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height */
+  margin: 0; /* Reset margin */
 }
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1; /* Push footer to the bottom */
 }
 
-/* Navbar */
+/* ============================================================
+   Navbar Styling
+   ============================================================ */
 .navbar {
   background: var(--primary-color);
   padding: 1rem;
@@ -68,7 +79,9 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero Section */
+/* ============================================================
+   Hero Section
+   ============================================================ */
 .hero {
   background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
@@ -78,8 +91,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh; /* Makes the hero section cover the entire viewport */
-  overflow: hidden; /* Prevents content from exceeding the viewport */
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow */
 }
 
 .hero h1 {
@@ -113,7 +126,9 @@ body {
   transform: scale(1.05);
 }
 
-/* About Section */
+/* ============================================================
+   About Section
+   ============================================================ */
 #about {
   padding: 3rem 0;
 }
@@ -132,7 +147,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Projects Section */
+/* ============================================================
+   Projects Section
+   ============================================================ */
 #projects {
   padding: 3rem 0;
 }
@@ -161,7 +178,9 @@ body {
   padding: 1.5rem;
 }
 
-/* Contact Section */
+/* ============================================================
+   Contact Section
+   ============================================================ */
 #contact {
   padding: 3rem 0;
 }
@@ -184,10 +203,13 @@ body {
   resize: vertical;
 }
 
-/* Footer */
+/* ============================================================
+   Footer
+   ============================================================ */
 footer {
   background: var(--primary-color);
   color: #fff;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   text-align: center;
+  margin-top: auto; /* Ensure it stays at the bottom */
 }
