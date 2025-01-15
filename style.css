@@ -164,19 +164,29 @@ body {
   gap: 1rem;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
+  max-width: 600px; /* Ensures the form is responsive */
+  margin: 0 auto; /* Centers the form */
 }
 
 .contact-form input, .contact-form textarea {
   width: 100%;
   max-width: 500px;
-  padding: 0.8rem;
+  padding: 1rem; /* Increased padding for easier typing */
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 1rem; /* Increases text size for better readability */
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: var(--primary-color); /* Border color change on focus */
+  outline: none; /* Removes default outline for better design */
 }
 
 .contact-form button {
   margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2rem; /* Increased padding for better button size */
   background: var(--primary-color);
   color: #fff;
   border: none;
@@ -190,19 +200,34 @@ body {
   transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem 0;
-  background: var(--secondary-color);
-  color: #fff;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact-form input, .contact-form textarea {
+    max-width: 100%;
+  }
+
+  .contact-form button {
+    padding: 0.8rem 1.2rem; /* Slightly smaller button on mobile */
+  }
 }
 
 /* Footer */
 footer {
-  background: var(--primary-color);
+  background: var(--primary-color); /* Use primary color for the footer */
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 1.5rem 0; /* Adjusted padding for consistency */
+  margin-top: 3rem; /* Ensure space between content above */
+}
+
+/* Optional: Additional styles for footer links or other elements */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color); /* Accent color on hover */
 }
