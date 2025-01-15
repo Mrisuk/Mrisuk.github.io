@@ -231,3 +231,39 @@ footer a {
 footer a:hover {
   color: var(--accent-color); /* Accent color on hover */
 }
+
+/* Button Styling */
+.button {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block; /* Ensure the button behaves like a block element */
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Optional: Button size adjustments */
+.button.small {
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+
+.button.large {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
