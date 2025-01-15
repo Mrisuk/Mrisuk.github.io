@@ -21,11 +21,11 @@
     </div>
 </nav>
 
-<!-- Header -->
-<header>
-    <div class="header-container">
+<!-- Hero Section -->
+<header class="hero">
+    <div class="container">
         <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-        <p class="subtitle">A Developer Who Brings Ideas to Life</p>
+        <p class="subtitle">Turning Ideas into Reality with Code</p>
         <a href="#projects" class="button">Explore My Work</a>
     </div>
 </header>
@@ -34,14 +34,14 @@
 <section id="about">
     <div class="container">
         <h2 class="section-title">About Me</h2>
-        <div class="about-content">
+        <div class="about-grid">
             <img src="assets/images/profile.jpg" alt="Your Profile Picture" class="profile-img">
-            <div>
+            <div class="about-text">
                 <p>
-                    I'm a passionate Computer Science major dedicated to building clean, user-friendly applications that solve real-world problems.
+                    I’m a creative and passionate Computer Science major with a knack for building efficient and user-friendly digital solutions. Whether it's coding applications, solving problems, or designing clean interfaces, I’m always striving to learn and improve.
                 </p>
                 <p>
-                    In my free time, I enjoy gaming, creating digital content, and exploring innovative tech ideas.
+                    Beyond coding, I enjoy gaming, making content, and brainstorming innovative projects that challenge the status quo.
                 </p>
             </div>
         </div>
@@ -54,16 +54,20 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>A web app designed to streamline [problem-solving]. Built using [technologies].</p>
-                <a href="https://github.com/yourusername/project1" target="_blank" class="button">View Project</a>
+                <img src="assets/images/project1.jpg" alt="Project 1" class="project-img">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Streamlining [problem-solving] with [technologies]. A clean, intuitive web application.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank" class="button">View Project</a>
+                </div>
             </div>
             <div class="project-card">
-                <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A mobile app for [purpose]. Features [key features] and built with [technologies].</p>
-                <a href="https://github.com/yourusername/project2" target="_blank" class="button">View Project</a>
+                <img src="assets/images/project2.jpg" alt="Project 2" class="project-img">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A mobile app designed to [solve a problem]. Powered by [key technologies].</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank" class="button">View Project</a>
+                </div>
             </div>
         </div>
     </div>
@@ -72,10 +76,8 @@
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p>
-            Interested in working together? Let's connect!
-        </p>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-text">Interested in collaborating or have a question? Feel free to reach out!</p>
         <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -88,7 +90,7 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>&copy; 2025 [Your Name]. Built with ❤️ and modern web technologies.</p>
+        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
     </div>
 </footer>
 </body>
