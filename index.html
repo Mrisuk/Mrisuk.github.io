@@ -3,72 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>[Your Name] Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- Header -->
 <header>
     <div class="container">
-        <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
-        <p>Aspiring Computer Scientist & Creative Problem Solver</p>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Hello, I'm <span>[Your Name]</span></h1>
+        <p>A Computer Science Enthusiast Crafting Digital Experiences</p>
+        <a href="#projects" class="cta-button">View My Work</a>
     </div>
 </header>
 
-<section id="about" class="container">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/images/profile.jpg" alt="Your Profile Picture" class="profile-img">
+            <div>
+                <p>
+                    I’m a computer science student passionate about solving problems through code.
+                    My expertise lies in Python, Java, and web development. I aim to build applications that improve lives.
+                </p>
+                <p>
+                    When I’m not coding, I enjoy gaming, exploring new tech, and sharing my knowledge through videos on platforms like YouTube and TikTok.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+                <h3>Project 1: [Title]</h3>
+                <p>[A brief description of the project’s purpose and technologies used.]</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+                <h3>Project 2: [Title]</h3>
+                <p>[A brief description of the project’s purpose and technologies used.]</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project3.jpg" alt="Project 3">
+                <h3>Project 3: [Title]</h3>
+                <p>[A brief description of the project’s purpose and technologies used.]</p>
+                <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
         <p>
-            I'm currently pursuing a degree in Computer Science, with expertise in programming languages like Python, Java, and web development. I enjoy tackling challenging problems and creating innovative solutions to improve user experiences.
+            Interested in working together or have questions? Feel free to reach out!
         </p>
+        <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </section>
 
-<section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Project 1: [Title]</h3>
-            <p>[Short description of the project and its impact.]</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 2: [Title]</h3>
-            <p>[Short description of the project and its impact.]</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 3: [Title]</h3>
-            <p>[Short description of the project and its impact.]</p>
-            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <p>
-        Want to work together or learn more about me? Reach out via email at
-        <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.
-    </p>
-    <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-
+<!-- Footer -->
 <footer>
-    <p>&copy; 2025 [Your Name]. Built with 💻 and ☕.</p>
+    <p>&copy; 2025 [Your Name]. Designed with ❤️ and powered by caffeine.</p>
 </footer>
 </body>
 </html>
