@@ -73,15 +73,27 @@ body {
   background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
   text-align: center;
-  padding: 6rem 0; /* Increased padding to give more space */
+  padding: 6rem 0; /* Increased padding for more space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure it takes up full viewport height */
+}
+
+.hero h1 {
+  margin-bottom: 1rem; /* Added bottom margin for space between header and button */
 }
 
 .hero .highlight {
   color: var(--accent-color);
 }
 
+.hero .subtitle {
+  margin-bottom: 2rem; /* Added margin for the subtitle */
+}
+
 .hero .button {
-  margin-top: 2rem; /* Increased margin to create more space */
   padding: 1rem 2rem; /* Increased padding for the button */
   background: #fff;
   color: var(--primary-color);
