@@ -1,4 +1,14 @@
-/* General Styles */
+/* CSS Variables */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #333;
+  --accent-color: #ffd700;
+  --background-color: #f9f9f9;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +16,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: var(--font-primary);
+  color: var(--secondary-color);
   line-height: 1.6;
+  background-color: var(--background-color);
   scroll-behavior: smooth;
 }
 
@@ -20,43 +31,53 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(120deg, #4caf50, #45a049);
+  background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
-header h1 span {
-  color: #ffd700;
+header h1 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
 }
 
-header .cta-button {
-  display: inline-block;
+header .highlight {
+  color: var(--accent-color);
+}
+
+header .subtitle {
   margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+header .button {
+  margin-top: 2rem;
   padding: 0.8rem 1.5rem;
-  background: #ffd700;
-  color: #333;
+  background: var(--accent-color);
+  color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 25px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-header .cta-button:hover {
+header .button:hover {
   background: #f4c500;
+  transform: scale(1.05);
 }
 
 /* About Section */
 #about {
   padding: 3rem 0;
-  background: #f9f9f9;
+  text-align: center;
 }
 
 #about .about-content {
   display: flex;
-  align-items: center;
   gap: 2rem;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -65,6 +86,7 @@ header .cta-button:hover {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Projects Section */
@@ -82,7 +104,8 @@ header .cta-button:hover {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .project-card img {
@@ -95,16 +118,21 @@ header .cta-button:hover {
   margin: 1rem;
 }
 
-.project-card a {
-  display: block;
+.project-card .button {
   margin: 1rem;
-  color: #4caf50;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
   font-weight: bold;
+  border-radius: 50px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.project-card .button:hover {
+  background: #45a049;
+  transform: scale(1.05);
 }
 
 /* Contact Section */
@@ -116,8 +144,8 @@ header .cta-button:hover {
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -125,28 +153,30 @@ header .cta-button:hover {
   width: 100%;
   max-width: 500px;
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .contact-form button {
-  padding: 0.8rem 2rem;
-  background: #4caf50;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-color);
   color: #fff;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
   background: #45a049;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #333;
+  padding: 1.5rem 0;
+  background: var(--secondary-color);
   color: #fff;
 }

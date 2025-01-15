@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] Portfolio</title>
+    <title>[Your Name] | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Header -->
 <header>
-    <div class="container">
-        <h1>Hello, I'm <span>[Your Name]</span></h1>
-        <p>A Computer Science Enthusiast Crafting Digital Experiences</p>
-        <a href="#projects" class="cta-button">View My Work</a>
+    <div class="header-container">
+        <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+        <p class="subtitle">A Developer Who Turns Ideas Into Reality</p>
+        <a href="#projects" class="button">Explore My Work</a>
     </div>
 </header>
 
 <!-- About Section -->
 <section id="about">
     <div class="container">
-        <h2>About Me</h2>
+        <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <img src="assets/images/profile.jpg" alt="Your Profile Picture" class="profile-img">
             <div>
                 <p>
-                    I’m a computer science student passionate about solving problems through code.
-                    My expertise lies in Python, Java, and web development. I aim to build applications that improve lives.
+                    I'm a Computer Science major who loves crafting clean, efficient, and user-friendly applications.
+                    From web development to problem-solving, I take pride in delivering impactful digital solutions.
                 </p>
                 <p>
-                    When I’m not coding, I enjoy gaming, exploring new tech, and sharing my knowledge through videos on platforms like YouTube and TikTok.
+                    Outside of coding, you’ll find me gaming, creating content, or brainstorming my next project idea.
                 </p>
             </div>
         </div>
@@ -39,25 +39,25 @@
 <!-- Projects Section -->
 <section id="projects">
     <div class="container">
-        <h2>Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>Project 1: [Title]</h3>
-                <p>[A brief description of the project’s purpose and technologies used.]</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                <h3>Project 1</h3>
+                <p>A web app designed to streamline [problem-solving]. Built using [technologies].</p>
+                <a href="https://github.com/yourusername/project1" target="_blank" class="button">View Project</a>
             </div>
             <div class="project-card">
                 <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>Project 2: [Title]</h3>
-                <p>[A brief description of the project’s purpose and technologies used.]</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                <h3>Project 2</h3>
+                <p>A mobile app for [purpose]. Features [key features] and built with [technologies].</p>
+                <a href="https://github.com/yourusername/project2" target="_blank" class="button">View Project</a>
             </div>
             <div class="project-card">
                 <img src="assets/images/project3.jpg" alt="Project 3">
-                <h3>Project 3: [Title]</h3>
-                <p>[A brief description of the project’s purpose and technologies used.]</p>
-                <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+                <h3>Project 3</h3>
+                <p>An innovative solution to [problem]. Uses [technologies] to deliver [results].</p>
+                <a href="https://github.com/yourusername/project3" target="_blank" class="button">View Project</a>
             </div>
         </div>
     </div>
@@ -66,22 +66,24 @@
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2>Contact Me</h2>
+        <h2 class="section-title">Get In Touch</h2>
         <p>
-            Interested in working together or have questions? Feel free to reach out!
+            Whether you're interested in collaborating or just want to say hi, feel free to drop me a message!
         </p>
         <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="button">Send Message</button>
         </form>
     </div>
 </section>
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2025 [Your Name]. Designed with ❤️ and powered by caffeine.</p>
+    <div class="container">
+        <p>&copy; 2025 [Your Name]. Built with ❤️ and modern web technologies.</p>
+    </div>
 </footer>
 </body>
 </html>
