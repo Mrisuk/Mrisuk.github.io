@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaywe Lin | Resume</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Navigation -->
@@ -12,20 +13,73 @@
   <div class="container">
     <a href="index.html" class="logo">Kaywe Lin</a>
     <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- Resume Section -->
-<section id="resume">
+<!-- Hero Section -->
+<header class="hero">
   <div class="container">
-    <h2 class="section-title">My Resume</h2>
-    <p>Click below to download a PDF version of my resume:</p>
-    <li><button class="button" onclick="window.location.href='path/to/your/resume.pdf'">Download Resume</button></li>
-    <iframe src="assets/resume.pdf" class="resume-frame"></iframe>
+    <h1>Kaywe Lin</h1>
+    <p class="subtitle">Aspiring Computer Scientist | Web Developer | Problem Solver</p>
+  </div>
+</header>
+
+<!-- Resume Section -->
+<section id="experience" class="resume-section">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-item">
+      <h3>Software Engineering Intern</h3>
+      <p class="company">Tech Solutions Inc. | Summer 2024</p>
+      <ul>
+        <li>Developed and optimized web applications using JavaScript and Python.</li>
+        <li>Collaborated with a team of engineers to design and implement new features.</li>
+        <li>Tested and debugged code to ensure high-quality, production-ready products.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Freelance Web Developer</h3>
+      <p class="company">Self-Employed | 2023-Present</p>
+      <ul>
+        <li>Built custom websites for clients, focusing on responsive design and user experience.</li>
+        <li>Utilized HTML, CSS, JavaScript, and WordPress to deliver high-quality web solutions.</li>
+        <li>Worked closely with clients to gather requirements and ensure customer satisfaction.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="resume-section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-item">
+      <h3>Bachelor of Science in Computer Science</h3>
+      <p class="university">Georgia Institute of Technology | Expected Graduation: May 2026</p>
+      <ul>
+        <li>Relevant Coursework: Data Structures, Algorithms, Web Development, Software Engineering</li>
+        <li>Member of the Computer Science Club and Hackathon Team</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="resume-section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <ul>
+        <li>Programming Languages: Python, JavaScript, Java, C++</li>
+        <li>Web Development: HTML, CSS, JavaScript, React, Node.js</li>
+        <li>Database Management: MySQL, MongoDB</li>
+        <li>Tools & Frameworks: Git, GitHub, Docker, VS Code</li>
+      </ul>
+    </div>
   </div>
 </section>
 
