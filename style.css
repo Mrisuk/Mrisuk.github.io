@@ -73,7 +73,7 @@ body {
   background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
   text-align: center;
-  padding: 4rem 0;
+  padding: 6rem 0; /* Increased padding to give more space */
 }
 
 .hero .highlight {
@@ -81,8 +81,8 @@ body {
 }
 
 .hero .button {
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
+  margin-top: 2rem; /* Increased margin to create more space */
+  padding: 1rem 2rem; /* Increased padding for the button */
   background: #fff;
   color: var(--primary-color);
   font-weight: bold;
