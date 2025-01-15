@@ -87,12 +87,15 @@ body {
   color: #fff;
   text-align: center;
   padding: 4rem 2rem;
+
+  /* Center content both vertically and horizontally */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden; /* Prevent overflow */
+
+  height: 100vh; /* Makes the hero section cover the entire viewport */
+  margin: 0; /* Remove extra spacing */
 }
 
 .hero h1 {
