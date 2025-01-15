@@ -1,3 +1,13 @@
+/* CSS Variables for UI Consistency */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --background-color: #f4f4f4;
+  --accent-color: #ffc107;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
 /* General Reset */
 * {
   margin: 0;
@@ -6,14 +16,22 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: var(--font-primary);
+  background: var(--background-color);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Navbar */
 .navbar {
-  background: #007bff;
+  background: var(--primary-color);
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -27,7 +45,7 @@ body {
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
@@ -47,35 +65,50 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffc107;
+  color: var(--accent-color);
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(120deg, #007bff, #ffc107);
+  background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 2rem; /* Increased padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero .highlight {
-  color: #ffc107;
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin: 0;
 }
 
-.hero .button {
+.hero .subtitle {
+  font-size: 1.2rem;
   margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: #fff;
-  color: #007bff;
-  font-weight: bold;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s;
+  line-height: 1.5;
 }
 
-.hero .button:hover {
-  background: #ffc107;
-  transform: scale(1.1);
+.button {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* About Section */
@@ -126,158 +159,33 @@ body {
   padding: 1.5rem;
 }
 
-.project-info h3 {
-  margin-bottom: 1rem;
-}
-
 /* Contact Section */
 #contact {
   padding: 3rem 0;
-  text-align: center;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
-  align-items: center;
-  margin-top: 2rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
-  max-width: 500px;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
+  padding: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
-.contact-form textarea {
-  resize: none; /* Prevent resizing */
-}
-
-.contact-form button {
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #45a049;
-  transform: scale(1.05);
+.form-group textarea {
+  resize: vertical;
 }
 
 /* Footer */
 footer {
-  background: #007bff;
+  background: var(--primary-color);
   color: #fff;
+  padding: 1.5rem 0;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-}
-
-/* General Resume Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.navbar {
-    background: #007bff;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: linear-gradient(120deg, #007bff, #ffc107);
-    color: #fff;
-    text-align: center;
-    padding: 3rem 0;
-}
-
-.hero .highlight {
-    color: #ffc107;
-}
-
-.hero .subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-/* Resume Sections */
-.resume-section {
-    padding: 3rem 0;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 1rem;
-}
-
-.experience-item, .education-item {
-    margin-bottom: 2rem;
-}
-
-.experience-item h3, .education-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.company, .university {
-    font-weight: bold;
-    color: #007bff;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 2rem;
-}
-
-.skills-list ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-footer {
-    background: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
 }
