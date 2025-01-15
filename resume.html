@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaywe Lin | Portfolio</title>
@@ -26,8 +26,17 @@
   <div class="container">
     <h2 class="section-title">Resume</h2>
     <div class="resume-content">
-      <p>Download my full resume below.</p>
-      <button class="button" onclick="window.location.href='assets/docs/Resume.pdf';">Download Resume</button>
+      <p>Preview my resume below or download it for offline viewing.</p>
+      <div class="resume-preview">
+        <!-- Embed PDF as a preview -->
+        <iframe
+                src="assets/documents/Resume.pdf"
+                width="100%"
+                height="600px"
+                style="border: 1px solid #ccc; border-radius: 10px;">
+        </iframe>
+      </div>
+      <button class="button" onclick="window.location.href='assets/documents/Resume.pdf';">Download Resume</button>
     </div>
   </div>
 </section>
