@@ -86,17 +86,16 @@ body {
   background: linear-gradient(120deg, var(--primary-color), var(--accent-color));
   color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
 
-  /* Center content both vertically and horizontally */
+  /* Flexbox for centering */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 
-  height: 100vh; /* Makes the hero section cover the entire viewport */
-  margin: 0; /* Remove extra spacing */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove extra margin or padding */
 }
+
 
 .hero h1 {
   font-size: 3rem;
